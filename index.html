@@ -334,7 +334,7 @@
                                 <div class="companyName activeExp">
                                     <div class="expInform">
                                         <h4>Horizone Solution</h4>
-                                        <p>A UX designer portfolio is designed to showcase a UX designer's work. It typically contains detailed case studies of UX design projects, demonstrating skill and</p>
+                                        <!-- <p>A UX designer portfolio is designed to showcase a UX designer's work. It typically contains detailed case studies of UX design projects, demonstrating skill and</p> -->
                                         </div>
                                         <div class="workedPrieod">
                                             <p>20<span>18</span></p>
@@ -342,10 +342,10 @@
                                             <p>20<span>19</span></p>
                                         </div>
                                     </div>
-                                    <div class="companyName">
+                                    <div class="companyName activeExp">
                                         <div class="expInform">
                                         <h4>Mechlin technologies Pvt Ltd.</h4>
-                                        <p>A UX designer portfolio is designed to showcase a UX designer's work. It typically contains detailed case studies of UX design projects, demonstrating skill and</p>
+                                      
                                     </div>
                                         <div class="workedPrieod">
                                             <p>20<span>19</span></p>
@@ -353,10 +353,9 @@
                                             <p>20<span>20</span></p>
                                         </div>
                                     </div>
-                                    <div class="companyName">
+                                    <div class="companyName activeExp">
                                         <div class="expInform">
-                                        <h4>JAW Dropping marketing Pvt Ltd.</h4>
-                                        <p>A UX designer portfolio is designed to showcase a UX designer's work. It typically contains detailed case studies of UX design projects, demonstrating skill and</p>
+                                        <h4>JAW Dropping marketing Pvt Ltd.</h4>                                        
                                         </div>
                                         <div class="workedPrieod">
                                             <p>20<span>20</span></p>
@@ -364,10 +363,9 @@
                                             <p>20<span>20</span>(September)</p>
                                         </div>
                                     </div>
-                                    <div class="companyName">
+                                    <div class="companyName activeExp">
                                         <div class="expInform">
-                                        <h4>CS Soft Solution Pvt Ltd.</h4>
-                                        <p>A UX designer portfolio is designed to showcase a UX designer's work. It typically contains detailed case studies of UX design projects, demonstrating skill and</p>
+                                        <h4>CS Soft Solution Pvt Ltd.</h4>                                       
                                         </div>
                                         <div class="workedPrieod">
                                             <p>20<span>20</span></p>
@@ -472,12 +470,19 @@ $('.owl-carousel').owlCarousel({
     center: true,
     responsive:{
         0:{
-            items:1
+            items:1,
+            nav:false,
+            dots:true,
+            autoplay:true,
+
         },
         600:{
             items:2
         },
-        1000:{
+        600:{
+            items:2
+        },
+        1200:{
             items:3
         }
     }

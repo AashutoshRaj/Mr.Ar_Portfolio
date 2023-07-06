@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+body{
+  transition: all 0.5s linear;
+}
 @font-face {
     font-family: 'Blancha';
     src: url("../fonts/Blancha.eot");
@@ -322,6 +325,7 @@ header .headerInner .lRSide span {
     transform: translate(-50%,-50%);
     width: 100%;
     max-width: 500px;
+    transition: all 0.5s linear;
 }
 .selfImgage img {
     width: 100%;
@@ -372,7 +376,7 @@ header .headerInner .lRSide span {
   transform: translate(-50%,-50%);
   width: 100%;
   text-align: center;
-  z-index: 0;
+  z-index: 1;
   max-width: max-content;
 }
 .introName {
@@ -802,6 +806,67 @@ header .headerInner .lRSide span {
   padding-bottom: 50px;
 }
 
+.workExpr .totalExpBlock .blockExp .companyName:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  background: #424242;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9;
+  transition: all 0.5s linear;
+  
+}
+
+.workExpr .totalExpBlock .blockExp .companyName:hover:before{
+  animation-name: pixel_notification_in_out;
+  animation-duration: 0.8s; /* 0.8s seems perfect - but can be changed */
+  animation-iteration-count: infinite;
+  border: 1px solid #00c8ff; 
+  background: transparent;
+}
+
+@keyframes pixel_notification_in_out {
+  0% {
+    width: 0;
+    height: 0;
+    margin-left: 0;
+    margin-top: 0;
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    width: 50px;
+    height: 50px;   
+    opacity: 0;
+  }
+}
+
+
+@keyframes pixel_notification_out_in {
+  0% {
+    width: 50px;
+    height: 50px;   
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    margin-left: 0;
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+
 /* SkillsSc */
 .skills .heading {
   width: 100%;
@@ -1055,6 +1120,235 @@ footer {
 }
 
 /* Footer */
+
+
+
+
+@media screen and (max-width:1500px){
+  .aboutMe {   
+    align-items: end;    
+}
+div#workExp .myWorkBlock .heading h2 span { 
+  inset: 0;
+  font-size: 200px;
+  
+}
+}
+
+@media screen and (max-width:1280px){
+ 
+.workExpr .totalExpBlock .blockExp .companyName {
+  padding: 80px 50px;
+  width: 100%;
+}
+div#workExp .totalExpBlock {
+  max-width: 70%; 
+  background: rgb(0 0 0 / 48%);
+  z-index: 1;
+  position: relative;
+}
+}
+
+@media screen and (max-width:1199px){
+  .selfImgage {  
+    left: 80%;  
+}
+.aboutMe .aboutMeText h2 {
+  font-size: 100px;  
+}
+.aboutMe .aboutMeText span {
+  font-size: 60px;  
+  top: 26px; 
+}
+.aboutMe .aboutMeText:after {  
+  max-width: 190px;
+  z-index: -1;
+}
+}
+@media screen and (max-width:992px){
+
+body .skills .heading h2, .myWork .myWorkBlock .heading h2 {
+  font-size: 80px;
+  
+}
+div#workExp .myWorkBlock .heading {
+   max-width: 100%; 
+  z-index: 9;
+  position: static;
+}
+div#workExp .myWorkBlock .heading h2 {
+  display: grid;
+}
+div#workExp .myWorkBlock .heading h2 span {
+  grid-row: 1;
+  font-size: 80px;
+  position: static;
+}
+div#workExp {
+  padding: 50px 0;
+}
+div#workExp .totalExpBlock {
+  max-width: 100%; 
+}
+.workExpr .totalExpBlock .blockExp .companyName {
+  padding: 55px 15px;
+  width: 100%;
+}
+.workExpr .totalExpBlock .blockExp .companyName h4 {
+  font-size: 20px;
+}
+.workExpr .totalExpBlock .blockExp .companyName .workedPrieod * {
+  font-size: 15px!important;
+}
+.skills .skillSetBlock .skillsBoxmain .skillBox .frameImage img { 
+  max-width: 90px;  
+}
+.workExpr .totalExpBlock .blockExp .companyName:before {  
+  width: 30px;
+  height: 30px;
+  
+  
+}
+}
+
+
+@media screen and (max-width:767px){
+  .aboutMe {
+    align-items: end;
+    grid-template-columns: 1fr;
+}
+.fullScreenSlide .mainBlock:not(:first-child) {
+  height: auto;
+}
+.selfImage {
+  text-align: center;
+}
+.devLovText .h4 {
+  font-size: 60px; 
+  line-height: 60px;
+}
+.aboutMe .aboutMeText:after {
+  max-width: 100%;
+}
+.myWork { 
+  padding: 50px 0;
+}
+body .skills .heading h2, .myWork .myWorkBlock .heading h2, div#workExp .myWorkBlock .heading h2 span, div#workExp .myWorkBlock .heading h2 {
+  font-size: 40px;
+}
+.skills .skillSetBlock .skillsBoxmain .skillBox { 
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+.bannerText_, .onFullScreenShowtext { 
+  left: 15px;
+  transform: unset;  
+}
+.myWorkBlock, div#workExp {
+  padding-bottom: 0;
+}
+.footerInner .contactDetails {  
+  padding: 15px 0;  
+}
+.skills .skillSetBlock {
+    padding: 50px 15px;
+}
+header {  
+  padding: 0 15px;
+}
+.myWork .myWorkBlock .owl-nav [class*="owl-"]{display: none;}
+.aboutMe .aboutMeText h2 {
+  font-size: 60px;
+}
+.aboutMe .aboutMeText span {
+  font-size: 33px;
+  top: 20px;
+}
+.aboutMe .aboutMeText p {  
+  max-width: 100%;
+}
+
+}
+
+@media screen and (max-width:575px){
+  .bgpaint img {    
+    display: none;
+}
+header .headerInner .lRSide span { 
+  width: 30px;  
+}
+header .headerInner:after { 
+  width: 60px; 
+}
+.selfImgage img { 
+  filter: grayscale(1);
+}
+.BannerBlock { 
+  position: static;
+ 
+}
+.bgAura { 
+  position: absolute;
+}
+.skills .skillSetBlock .skillsBoxmain .skillBox {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.workExpr .totalExpBlock .blockExp .companyName {
+  grid-template-columns: 1fr;
+}
+.workExpr .totalExpBlock .blockExp .companyName  .workedPrieod { 
+  justify-content: flex-start;
+}
+.workExpr .totalExpBlock .blockExp .companyName { 
+  gap: 0;
+}
+.workExpr .totalExpBlock .blockExp .companyName:nth-child(even) .expInform * {
+  text-align: left;
+}
+.workExpr .totalExpBlock .blockExp .companyName .workedPrieod p {
+  margin: 0 8px;
+}
+.workExpr .totalExpBlock .blockExp .companyName:after {  
+  left: 0;  
+}
+.workExpr .totalExpBlock .blockExp .companyName:before {
+  width: 20px;
+  height: 20px;
+  left: 0;
+}
+div#workExp .totalExpBlock .blockExp {
+  position: relative;
+  padding-left: 22px;
+}
+.footerInner .contactDetails {
+  grid-column: span 5;
+}
+.devLovText .h4 {
+  font-size: 50px;
+  line-height: 60px;
+}
+.fullName .h4 { 
+  font-size: 20px;  
+} 
+.workExpr .totalExpBlock .blockExp .companyName .workedPrieod p:first-child {
+  margin-left: 0;
+}
+.bannerText span {
+  font-size: 30px;  
+}
+.nameSingnature span {
+  font-size: 50px;
+}
+.aboutMe .aboutMeText .checkMYW a {
+  font-size: 30px;
+}
+.left, .right {  
+  height: 5px;
+  width: 20px;  
+}
+}
+
 
 
 

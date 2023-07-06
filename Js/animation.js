@@ -2,9 +2,10 @@ $(document).ready(function(){
     
 
     gsap.fromTo('.myLogo', { y: '-60px' }, { duration: 1, y: '0%', ease: 'power2.out', delay: 5 });
-    gsap.from(" .fullName .h4", 2.5, {delay: 1, y: -500,stagger: {amount: 1.5 },ease: "power4.inOut"});
+    gsap.from(" .fullName .h4", 1.5, {delay: 0.5, y: -500,stagger: {amount: 1.5 },ease: "power4.inOut"});
     gsap.from(" .devLovText .h4", 2.5, {delay: 1, y: -500,stagger: {amount: 2.5 },ease: "power4.inOut"});
     // gsap.fromTo('.bannerText', { x: '-500px' }, { duration: 1, x: '0%', ease: 'power2.out', delay: 2.5 });
+    gsap.from(" .bannerText > p", 1.5, {delay: 2, x: -500,stagger: {amount: 0.1 },ease: "bounce.out"});
     gsap.from(" .introName span", 2.5, {delay: 2, x: -500,stagger: {amount: 0.1 },ease: "bounce.out"});
     gsap.from(" .introName .nameSingnature span", 2.5, {delay: 3, opacity:0, stagger: {amount: 0.1 },ease: "power4.inOut"});
 
@@ -35,6 +36,7 @@ gsap.to('.bannerText p:after', {
   });
 
 }); 
+
 
 
 
