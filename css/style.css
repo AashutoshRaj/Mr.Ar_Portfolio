@@ -1267,10 +1267,32 @@ header {
 .aboutMe .aboutMeText p {  
   max-width: 100%;
 }
-
+header.header {
+  background: black;
+  z-index: 99;
+  position: fixed;
+}
+.aboutMe .selfImage .image img {
+  top: 1px;
+}
+.selfSignature p { 
+  font-size: 25px;
+}
 }
 
 @media screen and (max-width:575px){
+  .myLogo p {
+    font-size: 27px;
+}
+  .aboutMe .aboutMeText p.infor:before { 
+    width: 11px;
+}
+.aboutMe .aboutMeText p {  
+  padding-left: 20px;
+}
+  .bannerText p {
+    font-size: 18px;
+}
   .bgpaint img {    
     display: none;
 }
@@ -1338,7 +1360,8 @@ div#workExp .totalExpBlock .blockExp {
   font-size: 30px;  
 }
 .nameSingnature span {
-  font-size: 50px;
+  font-size: 30px;
+  top: 4px;
 }
 .aboutMe .aboutMeText .checkMYW a {
   font-size: 30px;
@@ -1347,7 +1370,7 @@ div#workExp .totalExpBlock .blockExp {
   height: 5px;
   width: 20px;  
 }
-}
+} 
 
 
 
