@@ -32,6 +32,8 @@
   </head>
   <body>
 
+    <div id="loader" class="center"></div>
+
     <!-- <div class='loader df aic jcc lodingPage'>
         <div>
           <h1>Loading</h1>
@@ -526,6 +528,22 @@ $('.owl-carousel').owlCarousel({
 
 
 
+</script>
+
+<script>
+    document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+                "body").style.visibility = "hidden";
+            document.querySelector(
+                "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+                "#loader").style.display = "none";
+            document.querySelector(
+                "body").style.visibility = "visible";
+        }
+    };
 </script>
 
 
