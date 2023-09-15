@@ -1298,6 +1298,9 @@ header.header {
 }
 
 @media screen and (max-width:575px){
+  .myLogo p img { 
+    max-width: 39px!important;
+}
   .myLogo p {
     font-size: 27px;
 }
