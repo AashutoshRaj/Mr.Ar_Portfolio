@@ -538,10 +538,13 @@ header .headerInner .lRSide span {
     overflow: hidden;
     height: 100px;
     position: absolute;
-    bottom: 39px;
+    bottom: 36px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 0 #000, 0 0 11px #000000b3;
+}
+.insta.icons .onHover {
+  display: none;
 }
 .socialIcons .icons .onHover img {
     width: 100%;
