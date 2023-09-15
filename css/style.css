@@ -742,6 +742,11 @@ header .headerInner .lRSide span {
     transition: opacity .65s cubic-bezier(.05,.2,.1,1),transform .65s cubic-bezier(.05,.2,.1,1);
     z-index: 99;
 }
+.myWork .myWorkBlock .owl-carousel .owl-stage .owl-item .item .webLinks .projectInfo a sub {
+  font-size: 13px;
+  display: block;
+  font-weight: 300;
+}
 .myWork .myWorkBlock .owl-carousel .owl-stage .owl-item .item .webLinks a.onHoverLink {
     position: absolute;
     top: 0;
