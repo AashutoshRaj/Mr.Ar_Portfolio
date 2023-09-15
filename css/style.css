@@ -6,7 +6,10 @@
   filter: invert(1);
   bottom: -7px;
 } 
-
+.insta.icons:hover .onHover {
+  display: block;
+  cursor: pointer;
+} 
 html {
   scroll-behavior: smooth;
 }
@@ -556,9 +559,6 @@ header .headerInner .lRSide span {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.socialIcons .icons a:not(:hover) ~ .onHover {
-    display: none;
 }
 
 .heading {
