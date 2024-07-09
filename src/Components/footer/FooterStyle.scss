@@ -1,0 +1,35 @@
+.footerBlock {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 5%;
+    align-items: center;
+    .contactDetails {
+        text-align: left;
+        color: #fff;
+        h4{
+            font-size: 80px;
+        }
+    }
+    .socialIcons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap:15px;
+        .icons {
+            a {
+                display: flex;
+                border: 1px solid #fff;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+               svg {
+                    fill: #fff;
+                    width: 30px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+}

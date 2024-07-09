@@ -1,0 +1,15 @@
+@import '../../variable.scss';
+
+.linesLoder {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    .line {
+        height: 33%;
+        background-color: #fd4766;
+       
+    }
+   
+}

@@ -1,0 +1,65 @@
+@import './variable.scss';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $blackColor;
+  overflow-x: hidden;
+  // &:after {
+  //   content: "";
+  //   position: fixed;
+  //   width: 50%;
+  //   height: 100vh;
+  //   background: #00dee3;
+  //   top: 0;
+  //   z-index: -1;
+  // }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+.bg-Black{
+  background-color: $blackColor;
+}
+.text-white{
+  color: $whiteColor;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+@media screen and (max-width:1170px){
+  body{
+    .allSection{
+      display: none;
+    }
+    &:after{
+      content: "Mobile view is currently being developed.";
+      position: absolute;
+      width: 100%;
+      color: #1c1c1c;
+      font-size: 14vw;
+      font-family: 'Right Grotesk Tight';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 11px;
+
+    }
+  }
+}

@@ -1,0 +1,229 @@
+@import '../../variable.scss';
+
+.BannerBlock {
+    background-color: $blackColor;
+    position: relative;
+    overflow: hidden;
+
+    .slider {
+        height: 100vh;
+        overflow: hidden;
+
+        .bgImages {
+            .selfImgage {
+                position: absolute;
+                left: 50%;
+                top: 67%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                max-width: 800px;
+                transition: all 0.5s linear;
+                z-index: 2;
+
+                img {
+                    width: 100%;
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .onFullScreenShowtext {
+            position: absolute;
+            top: 50%;
+            width: max-content;
+            z-index: 9;
+            left: 76px;
+
+            .bannerText {
+                p {
+                    color: $whiteColor;
+                    font-size: 2.125rem;
+                    font-weight: 300;
+                    text-align: center;
+                    position: relative;
+                    max-width: -webkit-max-content;
+                    max-width: -moz-max-content;
+                    max-width: max-content;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 8px;
+                        background: $perpalColor;
+                        left: 0px;
+                        top: 50%;
+                        z-index: -1;
+                    }
+                }
+
+                .introName {
+                    display: flex;
+
+                    span {
+                        font-size: 4rem;
+                        font-weight: 700;
+
+                        text-transform: uppercase;
+                        line-height: 60px;
+                        color: $whiteColor;
+                    }
+
+                    .nameSingnature {
+                        line-height: normal;
+                        margin-left: 17px;
+
+                        span {
+                            font-size: 50px;
+                            font-family: $fontFamily--1;
+                            text-transform: inherit;
+                            position: relative;
+                            top: -9px;
+                            color: $darkSkyColor;
+                            line-height: normal;
+                        }
+                    }
+                }
+
+                .socialIcons {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    max-width: max-content;
+                    margin: 0 auto 10px 0;
+                    gap: 12px;
+                    position: relative;
+
+                    .icons {
+                        a {
+                            font-style: unset;
+                            width: 35px;
+                            border: 1px solid $whiteColor;
+                            height: 35px;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            svg{
+                                fill: $whiteColor;
+                            }
+                        }
+
+                        &.insta {
+                            .onHover {
+                                display: none;
+                                cursor: pointer;
+                                width: 100%;
+                                max-width: 100px;
+                                overflow: hidden;
+                                height: 100px;
+                                position: absolute;
+                                bottom: 36px;
+                                background: $whiteColor;
+                                border-radius: 8px;
+                                box-shadow: 0 0 0 $blackColor, 0 0 11px #000000b3;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                        }
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 200px;
+                        background: $whiteColor;
+                        height: 2px;
+                        left: calc(100% + 20px);
+                        top: 17px;
+                    }
+                }
+            }
+
+
+
+        }
+
+        .bannerText_ {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            z-index: 1;
+            max-width:100%;
+            img.imageBanner{
+                position: absolute;
+                    top: calc(15% - 1px);
+                    right: -108px;
+                    width: 100%;
+                    max-width: 400px;
+                    z-index: 9999;
+                }
+            
+
+            .fullName {
+                display: flex;
+                padding: 0 20px;
+                position: absolute;
+                bottom: 30px;
+                right: 0;
+                z-index: 9999;
+
+                .h4 {
+                    color: $darkPinkColor;
+                    font-size: 60px;
+                    font-weight: 800;
+                    left: 7px;
+                    text-transform: uppercase;
+                    font-family: $fontFamily--2;
+                }
+            }
+
+            .devLovText {
+                display: flex;
+                align-items: center;
+                height: auto;
+                justify-content: center;
+
+                .h4 {
+                    font-size: 36vw;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    background: $darkPinkColor;
+                    background: $darkPinkColor;
+                    background: linear-gradient(120deg, $skyColor 20.69%, $perpalColor 50.19%, $darkPinkColor 79.69%);
+                    background: linear-gradient(120deg, $skyColor 20.69%, $perpalColor 50.19%, $darkPinkColor 79.69%);
+                   
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    display: inline-block;
+                    z-index: 99;
+                    font-family: $fontFamily--2;
+                    font-weight: 500;
+                }
+            }
+        }
+
+    }
+    .shadow {
+        background-image: none;
+        background-color: $blackColor;
+        width: 100dvw;
+        left: 50%;
+        transform: translate(-50%);
+        transition: background-color .4s cubic-bezier(.25,1,.5,1);
+        -webkit-mask-image: linear-gradient(to bottom,transparent 82%, $blackColor 100%);
+        mask-image: linear-gradient(to bottom,transparent 50%,$blackColor 100%);
+        position: absolute;
+        height: 100vh;
+        display: block;
+        bottom: 0;
+        z-index: 4;
+    }
+}

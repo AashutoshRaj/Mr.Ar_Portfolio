@@ -1,0 +1,235 @@
+@import '../variable.scss';
+
+
+
+
+.aboutMe {
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	align-items: end;
+	height: 100vh;
+	background-color: $blackColor;
+	
+
+	.aboutMeText {
+		padding: 25px;
+		position: relative;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		z-index: 1;
+		position: relative;
+		grid-column: span 3;
+
+		// &:after {
+		// 	content: '';
+		// 	width: 100%;
+		// 	height: 100vh;
+		// 	background: #fdce0c;
+		// 	position: absolute;
+		// 	right: 0;
+		// 	top: 0;
+		// 	max-width: 300px;
+		// 	z-index: -1;
+		// }
+
+		.heading {
+			position: relative;
+			max-width: max-content;
+
+			h2 {
+				@include heading;
+			}
+
+			span {
+				
+					font-size: 79px;
+					position: absolute;
+					left: 100%;
+					top: 41px;
+					font-weight: bold;
+					text-transform: uppercase;
+					transform: rotate(90deg);
+					color: $whiteColor;
+					font-family: cursive;
+			
+
+			}
+		}
+
+		p {
+			color: $whiteColor;
+			font-weight: 600;
+			line-height: 40px;
+			padding-left: 50px;
+			position: relative;
+			max-width: 830px;
+			font-size: 25px;
+			text-align: left;
+			opacity: 0.8;
+		}
+
+		p.infor {
+			&:before {
+				content: '';
+				position: absolute;
+				width: 15px;
+				height: 100%;
+				left: 0;
+				top: 0;
+				background: rgb(0, 222, 227);
+				background: linear-gradient(180deg, rgba(0, 222, 227, 1) 0%, rgba(253, 206, 12, 1) 100%);
+			}
+		}
+
+		.checkMYW {
+			padding-left: 50px;
+			margin-top: 50px;
+			text-align: left;
+
+			a {
+				font-size: 41px;
+				font-family: 'Blancha';
+				max-width: 100%;
+				margin-top: 58px;
+				line-height: 74px;
+				color: var(--blackColor);
+				text-decoration: none;
+				-webkit-transition: color 1s;
+				transition: color 1s;
+				position: relative;
+
+				.arrow-down {
+					width: 60px;
+					height: 40px;
+					position: absolute;
+					right: -40%;
+					bottom: 0px;
+					-webkit-animation: arrow 0.5s 1s infinite ease-out alternate;
+
+					.left {
+						position: absolute;
+						height: 8px;
+						width: 30px;
+						background: black;
+						-webkit-transform: rotate(240deg);
+						top: 10px;
+						left: 10px;
+						-webkit-border-radius: 4px;
+						-webkit-transform-origin: 5px 50%;
+						-webkit-animation: leftArrow 0.5s 1s infinite ease-out alternate;
+					}
+
+					.right {
+						position: absolute;
+						height: 8px;
+						width: 30px;
+						background: black;
+						-webkit-transform: rotate(-60deg);
+						top: 10px;
+						left: 10px;
+						-webkit-border-radius: 4px;
+						-webkit-transform-origin: 5px 50%;
+						
+					}
+
+				}
+			}
+		}
+
+	}
+
+
+	.selfImage {
+		height: 100vh;		
+		display: flex;
+		align-items: end;
+		position: sticky;
+		top: 0;
+		grid-column: span 2;
+		.image {
+			width: 100%;
+			img {
+				width: 100%;
+				filter: grayscale(1);
+			}
+		}
+		.shadow {
+			background-image: none;
+			background-color: $blackColor;
+			width: 100dvw;
+			left: 50%;
+			transform: translate(-50%);
+			transition: background-color .4s cubic-bezier(.25,1,.5,1);
+			-webkit-mask-image: linear-gradient(to bottom,transparent 82%, $blackColor 100%);
+			mask-image: linear-gradient(to bottom,transparent 50%,$blackColor 100%);
+			position: absolute;
+			height: 100vh;
+			display: block;
+			bottom: 0;
+			z-index: 4;
+		}
+		.shadowleftSide{
+			width: 280px;
+    left: 139px;
+    transform: translate(-50%);
+    transition: background-color 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    -webkit-background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(124, 190, 227, 0) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(124, 190, 227, 0) 100%);
+    position: absolute;
+    height: 100vh;
+    display: block;
+    bottom: 0;
+    z-index: 4;
+		}
+	}
+}
+
+
+.aboutMeInfo {
+	padding: 50px 15px;
+	overflow: hidden;
+	
+	p {
+		font-size: 12rem;
+    text-align: left;
+    white-space: pre;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Right Grotesk Tight';
+    letter-spacing: 6px;
+	span{
+		color: $darkPinkColor;
+	}
+	}
+	h2{
+		font-size: 20rem;
+    font-family: 'Right Grotesk Tight';
+    font-weight: 400;
+    line-height: normal;
+    line-height: 0.9;
+    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-fill-color: #000;
+	padding-bottom: clamp(10rem, 13.75em, 15.5rem);
+	
+	span{
+		display: block;
+    font-size: 33rem;
+	-webkit-text-stroke: 0px #ffffff;
+    -webkit-text-fill-color: #3477fd;
+	}
+	}
+	.textWords {
+		font-size: 10rem;
+		line-height: 0.8;
+		white-space: pre;
+		display: flex;
+		padding-bottom: clamp(10rem, 13.75em, 15.5rem);
+		span{
+			
+			font-family: $fontFamily--2;
+		}
+	}
+}

@@ -1,0 +1,140 @@
+/*  WorkExp*/
+.myWorkBlock{
+    .heading {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+        max-width: calc(100% - 70%);
+        float: left;
+        position: sticky;
+        top: 100px;
+      }
+        h2 {
+            position: relative;
+            font-size: 60px;
+            text-transform: uppercase;
+            font-weight: 800;
+            text-align: left;
+            width: 100%;
+            display: block;
+            line-height: normal;
+            color: #00c8ff;
+            z-index: 2;
+            padding-left: 15px;
+          span {
+            position: absolute;
+            left: 0;
+            font-size: 7vw;
+            z-index: -1;
+            color: #363636;
+            top: 2vw;
+          }
+          }
+      }
+
+
+
+.totalExpBlock {
+    max-width: 60%;
+    margin: 50px  0 0 auto;
+    padding: 50px 15px;
+    .blockExp {
+        .companyName {         
+            padding: 150px 50px;
+            position: relative;
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5rem;
+            height: 100vh;
+            h4{
+                font-weight: 800;
+    font-size: 30px;
+            }
+            .workedPrieod {
+                font-size: 18px;
+                font-weight: 700;
+                display: flex;
+    align-items: center;
+                p{
+                    margin: 0 8px;
+                    span {
+                        font-size: 25px;
+                        font-weight: 800;
+                      }
+                }
+            }
+            &:nth-child(even) { 
+                margin: 0 0 0 auto;
+                .expInform * {
+                    text-align: right;
+                  }
+                  .workedPrieod {
+                    justify-content: flex-start;
+                  }
+              }
+              &:nth-child(odd){
+                flex-direction: row-reverse;
+                .workedPrieod {
+                    grid-row: 1;
+                    justify-content: end;
+                  }
+                  .expInform * {
+                    text-align: left;
+                  }
+              }
+              * {
+                color: #4f4f4f;
+              }
+              .workedPrieod {
+                p {
+                    font-size: 23px;
+                    font-size: 18px;
+                    display: flex; 
+                    align-items: center;
+                  }
+              }
+              &:after {
+                // content: '';
+                // position: absolute;
+                // width: 2px;
+                // background: #272727;
+                // left: 50%;
+                // height: 0;
+                // transition: all 0.5s linear;
+                // z-index: 2;
+                // top: 0;
+              } 
+              &.activeExp{
+                &:after {
+                    height: 100%;
+                  }
+              }
+              &:before{
+             
+                content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    background: #00c8ff;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    transition: all 0.5s linear;
+    box-shadow: 0 0 0 #000, 1px 1px 20px #ad6767;
+              }
+            &:last-child{}
+            .workedPrieod{
+              p {
+                span {
+                  font-size: 14px;
+              }
+              }
+            }
+          }
+    }
+}
