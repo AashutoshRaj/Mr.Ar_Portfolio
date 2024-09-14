@@ -23,16 +23,17 @@ header {
             .resume{
                 a {
                     display: flex;
-    color: #000;
-    text-decoration: none;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 25px;
-    position: relative;
-    background: #e9cf1d;
-    border-radius: 10px;
-    font-family: cursive;
+                    color: #000;
+                    text-decoration: none;
+                    height: 40px;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 15px 25px;
+                    position: relative;
+                    background: #e9cf1d;
+                    border-radius: 10px;
+                    font-family: cursive;
+                    transition: background-color 0.5s ease;
                   &:after {
                         content: '';
                         position: absolute;
@@ -41,7 +42,15 @@ header {
                         height: 40px;
                         border-radius: 10px;
                         transform: rotate(4deg);
+                        transition: all 0.2s linear;
                     }
+                    &:hover{
+                        background: transparent;
+                        color: $offWhiteColor;
+                        &:after{
+                                transform: rotate(0deg);  
+                        }
+                    }   
                 }
             }
         }
@@ -64,6 +73,11 @@ header {
                         width: 100%;
                     }
                 }
+                img{
+                    width: 100%;
+                    max-width: 50px;
+                    filter: contrast(0.5);
+                }
         }
         .lRSide {
             display: flex;
@@ -83,4 +97,10 @@ header {
             transform: translate(-50%,-50%);
         }
     }
+
+    @media screen and (max-width:767px){
+        
+    }
+
+
 }

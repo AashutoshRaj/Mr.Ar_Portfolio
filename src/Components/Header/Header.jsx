@@ -1,5 +1,6 @@
 import React, {useRef, useEffect} from 'react'
 import kanha from '../../Images/kanha.png'
+import logoAr from '../../Images/logoAR.png'
 import '../Header/HeaderStyle.scss'
 import { gsap } from "gsap";    
 
@@ -9,7 +10,7 @@ import fileResume from '../Header/AshutoshRUCV-2024.docx'
 
 const Header = ({}) =>{
 useEffect(() => {
-    gsap.fromTo('.myLogo', { y: '-80px' }, { duration: 1, y: '0%', ease: 'power2.out', delay: 6 });
+    gsap.fromTo('.myLogo', { y: '-80px' }, { duration: 1, y: '0%', ease: 'power2.out', delay: 1 });
 
 }, [])
 
@@ -18,11 +19,12 @@ useEffect(() => {
         <>
         <header class="header">
         <div class="headerInner ">
-            <div class="myLogo">               
-                <p>Mr.<span>ar</span>
+            <div class="myLogo">
+                <img src={logoAr}></img>               
+                {/* <p>Mr.<span>ar</span>
                     <img              
                     src={kanha} alt='image'/>
-                </p>               
+                </p>                */}
             </div>
             <div className="resumeDownload">
                 <div className="resume">

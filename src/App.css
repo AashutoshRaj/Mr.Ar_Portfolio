@@ -106,6 +106,19 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Mango Grotesque';
+  src: url('../src/Fonts/MangoGrotesque-ExtraLight.eot');
+  src: url('../src/Fonts/MangoGrotesque-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('../src/Fonts/MangoGrotesque-ExtraLight.woff2') format('woff2'),
+      url('../src/Fonts/MangoGrotesque-ExtraLight.woff') format('woff'),
+      url('../src/Fonts/MangoGrotesque-ExtraLight.ttf') format('truetype'),
+      url('../src/Fonts/MangoGrotesque-ExtraLight.svg#MangoGrotesque-ExtraLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 
 

@@ -1,3 +1,5 @@
+@import '../../variable.scss';
+
 .footerBlock {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -9,6 +11,14 @@
         h4{
             font-size: 80px;
         }
+    }
+    .socialMedia{
+            h5{
+                color: $offWhiteColor;
+                    text-align: right;
+                    margin-bottom: 15px;
+
+            }
     }
     .socialIcons {
         display: flex;

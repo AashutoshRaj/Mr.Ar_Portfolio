@@ -172,17 +172,17 @@
 		}
 		.shadowleftSide{
 			width: 280px;
-    left: 139px;
-    transform: translate(-50%);
-    transition: background-color 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-    -webkit-background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(124, 190, 227, 0) 100%);
-    background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(124, 190, 227, 0) 100%);
-    position: absolute;
-    height: 100vh;
-    display: block;
-    bottom: 0;
-    z-index: 4;
+			left: 139px;
+			transform: translate(-50%);
+			transition: background-color 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+			-webkit-background: linear-gradient(90deg, rgb(14 9 13) 0%, rgba(124, 190, 227, 0) 100%);
+			background: rgb(0, 0, 0);
+			background: linear-gradient(90deg, rgb(14 9 13) 0%, rgba(124, 190, 227, 0) 100%);
+			position: absolute;
+			height: 100vh;
+			display: block;
+			bottom: 0;
+			z-index: 4;
 		}
 	}
 }
@@ -210,13 +210,13 @@
     font-weight: 400;
     line-height: normal;
     line-height: 0.9;
-    -webkit-text-stroke: 1px #ffffff;
-    -webkit-text-fill-color: #000;
+    -webkit-text-stroke: 1px $whiteColor;
+    -webkit-text-fill-color: $blackColor;
 	padding-bottom: clamp(10rem, 13.75em, 15.5rem);
 	
 	span{
 		display: block;
-    font-size: 33rem;
+    font-size:27.5vw;
 	-webkit-text-stroke: 0px #ffffff;
     -webkit-text-fill-color: #3477fd;
 	}

@@ -9,12 +9,14 @@ import MyWork from '../MyWork/MyWork'
 import MyValue from '../MyValues/Values'
 import Footer from '../footer/Footer'
 import Skilles from '../Skilles/Skilles'
+import BannerTwo from '../Banner/BannerTwo'
 
 const  MainSection =() =>{
   return (
     <div className='allSection'>
         <Header/>
-        <Banner/>
+        {/* <Banner/> */}
+        <BannerTwo/>
         <AboutS/>
         <About/>
         <Loading/>

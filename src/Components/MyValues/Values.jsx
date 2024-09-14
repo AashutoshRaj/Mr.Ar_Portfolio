@@ -1,15 +1,10 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './ValuesStyle.scss'
-
-
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import About from '../../About/About';
 gsap.registerPlugin(ScrollTrigger);
 
 const MyValue = () => {
-
-
 const workedCompanies = [
     {
         id:1,
@@ -41,42 +36,15 @@ const workedCompanies = [
         lastyear:'(till working in this orgnazinaiton)',
     }, 
 ]
- 
-   
-// useEffect(() => {
-//     workExp(".blockExp", 20, "100%");
-// }, []);
-
-// const workExp = (trigger, startY, endY) => {
-//     gsap.to(trigger, {
-//         scrollTrigger: {
-//             trigger: ".myWorkBlock",  // use the passed trigger
-//             pin: true,
-            
-//             start: 'top top',
-//             end: '100%',
-//         }
-//     });
-
-//     gsap.fromTo(trigger, 
-//         { y: startY }, 
-//         { y: endY, duration: 1 }
-//     );
-// };
-
   return (
     <div>
         <div className='myWorkBlock'>
             <div className='heading'>
-                    <h2>
-                    Work
-                    
-                    <span>experience</span>
-                    </h2>
+                    <h2>Work<span>experience</span></h2>
             </div>
             <div className='totalExpBlock'>
             <div className="blockExp">
-                    {workedCompanies.map((value, index) => (
+                    {workedCompanies.map((value) => (
                          <div className="companyName activeExp">
                          <div className="expInform">
                              <h4>{value.companyName}</h4>                                     

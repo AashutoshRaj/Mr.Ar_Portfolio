@@ -10,16 +10,12 @@ import  projecjseven from '../../Images/chery.png'
 import  projectEight from '../../Images/proLead.png'
 import  projectNine from '../../Images/addlly.png'
 import  projectTen from '../../Images/tcdam.png'
-
-
-
-
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-const MyWork = () => {
 
+const MyWork = () => {
 const projectList = [
     {
     id:1,
@@ -122,11 +118,7 @@ useEffect(()=>{
                 scrub: 6,
               },
 
-        })
-       
-       
-     
-      
+        })       
     return () => {
         pinTrigger?.kill();
         tl.kill();
@@ -142,7 +134,7 @@ useEffect(()=>{
                 <p>I have contributed in over 5+ projects Designing </p>
             </div>
             <div className="projectList">
-           {    projectList.map((value, index)=>(
+           {    projectList.map((value)=>(
                <div className='listP'>
                     <p>Project{value.id}</p>
                     <div class="webLinks">
@@ -157,18 +149,15 @@ useEffect(()=>{
                                             <p>{value.projectDescription}</p>
                                         </div>
                                         <a class="onHoverLink" href={value.linkSite} target="_blank">                                       
-                                        </a>                                
+                                        </a>                              
                            
                         </div>
                </div>
-           ))
-                 
-
+           )) 
            }
             </div>
         </div>
     </div>
   )
 }
-
 export default MyWork
