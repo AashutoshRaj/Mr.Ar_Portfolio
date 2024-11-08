@@ -23,7 +23,7 @@ export default function Footer() {
                                 <h5>Keep In Touch</h5> 
                                 <div className="socialIcons">
                                 <div className="faceBook icons">
-                                    <a href="https://www.instagram.com/" target='_blank' ><FaFacebook /></a>                                   
+                                    <a href="https://www.facebook.com/" target='_blank' ><FaFacebook /></a>                                   
                                 </div>
                                 <div className="insta icons">
                                   <a href="https://www.instagram.com/" target='_blank'><CiInstagram /></a>
