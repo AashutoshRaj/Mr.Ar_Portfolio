@@ -253,6 +253,17 @@
         }
        
     }
+    h1{
+        font-size: min(7.6vw, 11rem);
+        span{
+            display: inline-block;
+            &:empty{
+              width:15px;
+            }
+        }
+        
+
+    }
     .heroColumnLeftSide {
         display: flex;
         flex-direction: column;
@@ -260,11 +271,7 @@
         padding-right: 3.5rem;
         text-align: right;
         justify-content: center;
-        h1{
-            font-size: min(7.6vw, 11rem);
-            
-
-        }
+      
         .basedOn{
             p {
                 font-size: clamp(1.9rem, .23vw + .85rem, 1.13rem);

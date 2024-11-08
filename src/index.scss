@@ -43,26 +43,26 @@ body{
   overflow-x: hidden;
 }
 @media screen and (max-width:1170px){
-  // body{
-  //   .allSection{
-  //     display: none;
-  //   }
-  //   &:after{
-  //     content: "Mobile view is currently being developed.";
-  //     position: absolute;
-  //     width: 100%;
-  //     color: #1c1c1c;
-  //     font-size: 14vw;
-  //     font-family: 'Right Grotesk Tight';
-  //     top: 50%;
-  //     left: 50%;
-  //     transform: translate(-50%, -50%);
-  //     width: 100%;
-  //     text-align: center;
-  //     text-transform: uppercase;
-  //     font-weight: 700;
-  //     letter-spacing: 11px;
+  body{
+    .allSection{
+      display: none;
+    }
+    &:after{
+      content: "Mobile view is currently being developed.";
+      position: absolute;
+      width: 100%;
+      color: #1c1c1c;
+      font-size: 14vw;
+      font-family: 'Right Grotesk Tight';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 11px;
 
-  //   }
-  // }
+    }
+  }
 }
