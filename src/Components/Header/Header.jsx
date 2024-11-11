@@ -4,7 +4,7 @@ import logoAr from '../../Images/logoAR.png'
 import '../Header/HeaderStyle.scss'
 import { gsap } from "gsap";    
 
-import fileResume from '../Header/AshutoshRUCV-2024.docx'
+import fileResume from './AshutoshRUCV-2024..docx'
 
 
 
