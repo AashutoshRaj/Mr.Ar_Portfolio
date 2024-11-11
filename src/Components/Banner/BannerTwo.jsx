@@ -3,6 +3,9 @@ import selfImage from '../../Images/SelfImg6.png'
 import './BannerStyle.scss';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+// import ScrollTrigger from 'gsap-trial/ScrollTrigger';
+// gsap.registerPlugin(ScrollTrigger);
+
 
 const BannerTwo = ({}) => { 
 const myName= "Aashutosh Raj"
@@ -33,6 +36,10 @@ useGSAP(()=>{
         duration:1,
         delay:5,
     })
+
+    
+
+
 })
 
 return (

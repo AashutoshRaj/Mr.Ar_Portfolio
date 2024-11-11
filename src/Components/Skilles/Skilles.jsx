@@ -8,6 +8,7 @@ import reactUIcon from '../../Images/React-icon.svg.png'
 import photoshopIcon from '../../Images/photoshop.png'
 import gitIcon from '../../Images/git.png'
 import { gsap } from 'gsap';
+import gsapIcon from '../../Images/gspaIcon.jpg'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,6 +43,9 @@ const Skilles = ()=>{
                             </div>
                             <div className="cards box_4">
                             <img src={gitIcon}/>
+                            </div>
+                            <div className="cards box_4">
+                            <img src={gsapIcon}/>
                             </div>
                                 </div>
                             
